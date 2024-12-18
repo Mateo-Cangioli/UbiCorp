@@ -6,9 +6,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <header className="header">
-        <div className="logo">
-          <img src="/path/to/logo.png" alt="Logo" />
-        </div>
+       
         <h1 className="title">Traslados Médicos de Pacientes Crónicos</h1>
         <p className="welcome-text">Cuidamos de tus pacientes crónicos en cada traslado.</p>
       </header>
