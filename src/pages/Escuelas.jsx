@@ -125,7 +125,7 @@ const Escuela = () => {
         <div className="col-md-10">
           <h1 className="display-4 text-center">Escuelas Especiales</h1>
           <p className="lead text-center">
-            Aquí puedes ver algunos de nuestros datos de contacto y más.
+            Aquí puedes ver algunos de nuestros datos de contacto y más de las escuelas.
           </p>
 
           {/* Tarjetas para cada escuela */}

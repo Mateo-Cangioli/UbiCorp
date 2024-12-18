@@ -17,7 +17,9 @@ const Home = () => {
         <h2>Servicios que ofrecemos</h2>
         <div className="service-cards">
           <div className="service-card">
-            <i className="fas fa-user-md"></i>
+            <i className="fas fa-hospital"
+            
+            ></i>
             <h3>
               <Link to="/centros">Centros</Link>
             </h3>
@@ -31,7 +33,7 @@ const Home = () => {
             <p>Mapa con ubicaciones de los Centros y Escuelas.</p>
           </div>
           <div className="service-card">
-            <i className="fas fa-heartbeat"></i>
+            <i className="fas fa-hospital"></i>
             <h3>
               <Link to="/escuelas">Escuelas</Link>
             </h3>
