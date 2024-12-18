@@ -1,0 +1,41 @@
+/* Contenedor del mapa */
+.map-container {
+    height: 500px;  /* Define la altura del mapa */
+    width: 100%;    /* Asegura que el mapa ocupe todo el ancho del contenedor */
+    border: 2px solid #ddd;  /* Un borde sutil para el mapa */
+    border-radius: 8px;  /* Bordes redondeados */
+    position: relative;  /* Permite que los elementos dentro del mapa se superpongan sin interferir con el mapa */
+}
+  
+  /* Barra de búsqueda */
+.search-bar {
+    margin-bottom: 10px;  /* Espaciado inferior para la barra de búsqueda */
+    z-index: 1000; /* Asegura que la barra de búsqueda se quede encima del mapa */
+    position: absolute; /* Posicionamiento absoluto para que se sitúe sobre el mapa */
+    top: 10px;   /* Coloca la barra de búsqueda 10px desde la parte superior del contenedor */
+    left: 10px;  /* Coloca la barra de búsqueda 10px desde la parte izquierda del contenedor */
+    width: 300px;  /* Ancho específico para la barra de búsqueda */
+}
+  
+  /* Estilo para el botón de la barra de búsqueda (si lo tienes dentro de ella) */
+button {
+    margin-bottom: 20px;  /* Espaciado inferior para los botones */
+    padding: 10px 20px;  /* Espaciado dentro del botón */
+    background-color: #007bff;  /* Color de fondo del botón */
+    color: #fff;  /* Color del texto del botón */
+    border: none;  /* Sin borde */
+    border-radius: 4px;  /* Bordes redondeados en el botón */
+    cursor: pointer;  /* Cambia el cursor a una mano cuando se pasa por encima */
+}
+  
+button:hover {
+    background-color: #0056b3;  /* Color del fondo cuando el botón es hover */
+}
+  
+ 
+/* Controles de zoom en el mapa */
+.leaflet-control-zoom {
+    position: absolute ;  /* Posiciona los controles de zoom en el mapa */
+    top: 80px !important;  /* Ajusta la distancia desde el borde superior */
+    left: 20px !important;  /* Ajusta la distancia desde el borde derecho */
+}

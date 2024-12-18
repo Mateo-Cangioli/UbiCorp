@@ -1,0 +1,154 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+.header .logo img {
+  width: 150px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.intro {
+  position: relative;
+  text-align: center;
+}
+
+.background-image img {
+  width: 100%;
+  height: auto;
+}
+
+.message {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  color: white;
+}
+
+.services {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card i {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+.service-card h3 {
+  margin: 15px 0;
+  font-size: 1.5rem;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.cta {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cta h2 {
+  font-size: 2rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    width: 45%; /* Ajustamos las tarjetas a dos columnas */
+  }
+}
+
+@media (max-width: 768px) {
+  .header .logo img {
+    width: 120px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .welcome-text {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    width: 100%; /* Las tarjetas ocupan todo el ancho en pantallas más pequeñas */
+    margin-bottom: 20px;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .message {
+    font-size: 1.2rem; /* Reducimos el tamaño del texto */
+    top: 25%;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .services {
+    padding: 20px;
+  }
+
+  .cta {
+    padding: 20px;
+  }
+}

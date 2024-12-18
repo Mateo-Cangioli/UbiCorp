@@ -1,0 +1,81 @@
+/* Asegúrate de que el body y html ocupen el 100% de la altura */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.d-flex {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+  height: 100%;
+}
+
+/* Estilo para la barra de navegación fija */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #282c34; /* Color de fondo */
+  color: white; /* Color de texto */
+  z-index: 1000; /* Asegura que la barra esté sobre otros elementos */
+  padding: 1rem; /* Espaciado interno */
+  box-sizing: border-box; /* Asegura que el padding no altere el tamaño total */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0; /* Asegura que se quede en la parte superior */
+  left: 0;
+  right: 0;
+}
+
+/* Agregar espacio al contenido principal para que no quede oculto debajo de la barra */
+.content {
+  margin-top: 60px; /* Ajusta según la altura de tu navbar */
+  flex-grow: 1; /* Hace que el contenido ocupe el espacio restante */
+  padding: 20px;
+  overflow-y: auto; /* Permite hacer scroll en el contenido */
+}
+
+/* Estilo del footer */
+footer {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+/* Media Queries para hacer que sea responsive */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .content {
+    margin-top: 80px; /* Ajusta según el tamaño de la navbar en móviles */
+    padding: 10px;
+  }
+
+  footer {
+    padding: 0.5rem;
+  }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content {
+    margin-top: 70px; /* Ajusta según el tamaño de la navbar en tabletas */
+  }
+}
